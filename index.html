@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="app">
+        <h4 class="mb-3">Todo App</h4>
+        <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+            <span>Add New Task</span>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <h5 class="text-center my-3">Task</h5>
+
+  
+  <!-- Modal -->
+  <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Task</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="textInput">Task Title</label>
+          <input class="form-control" type="text" id="textInput" name="">
+          <div id="msg"></div>
+          <br>
+
+          <label for="dateInput">Due Date</label>
+          <input class="form-control" type="date" id="dateInput" name="">
+          <br>
+
+          <label for="textarea">Description</label>
+          <textarea class="form-control" name="" id="textarea" cols="30" rows="5"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" id="add" class="btn btn-primary" >Add</button>
+        </div>
+      </div>
+    </div>
+  </form>
+       
+        <div id="tasks">
+           
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/e911bf7a6f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
